@@ -135,7 +135,7 @@ export const Transactions: React.FC<TransactionsProps> = ({ transactions, accoun
       {/* Header */}
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-gray-900">Transactions</h1>
-        <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700">
+        <button className="flex items-center space-x-2 text-[#521135] hover:text-[#00587c]">
           <Download size={16} />
           <span className="text-sm font-medium">Export</span>
         </button>
@@ -163,14 +163,14 @@ export const Transactions: React.FC<TransactionsProps> = ({ transactions, accoun
             placeholder="Search transactions..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#521135] focus:border-transparent"
           />
         </div>
 
         {/* Filter Toggle */}
         <button
           onClick={() => setShowFilters(!showFilters)}
-          className="flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+          className="flex items-center space-x-2 text-[#521135] hover:text-[#00587c]"
         >
           <Filter size={16} />
           <span className="text-sm font-medium">Filters</span>
@@ -188,7 +188,7 @@ export const Transactions: React.FC<TransactionsProps> = ({ transactions, accoun
               <select
                 value={selectedAccount}
                 onChange={(e) => setSelectedAccount(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
               >
                 <option value="all">All Accounts</option>
                 {accounts.map((account) => (
@@ -204,7 +204,7 @@ export const Transactions: React.FC<TransactionsProps> = ({ transactions, accoun
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
               >
                 <option value="all">All Categories</option>
                 {categories.map((category) => (
@@ -220,7 +220,7 @@ export const Transactions: React.FC<TransactionsProps> = ({ transactions, accoun
               <select
                 value={dateRange}
                 onChange={(e) => setDateRange(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
               >
                 <option value="7">Last 7 days</option>
                 <option value="30">Last 30 days</option>

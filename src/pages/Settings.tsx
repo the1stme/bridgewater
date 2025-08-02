@@ -89,7 +89,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
         <h2 className="text-xl font-semibold text-gray-900">Profile Information</h2>
         <button
           onClick={() => setEditingProfile(!editingProfile)}
-          className="flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+          className="flex items-center space-x-2 text-[#521135] hover:text-[#00587c]"
         >
           <Edit3 size={16} />
           <span className="text-sm font-medium">
@@ -106,7 +106,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
               type="text"
               value={profileData.name}
               onChange={(e) => setProfileData({...profileData, name: e.target.value})}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
             />
           </div>
           
@@ -116,7 +116,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
               type="email"
               value={profileData.email}
               onChange={(e) => setProfileData({...profileData, email: e.target.value})}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
             />
           </div>
           
@@ -126,7 +126,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
               type="tel"
               value={profileData.phone}
               onChange={(e) => setProfileData({...profileData, phone: e.target.value})}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
             />
           </div>
           
@@ -140,7 +140,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
                 address: {...profileData.address, street: e.target.value}
               })}
               placeholder="Street Address"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 mb-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 mb-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
             />
             <div className="grid grid-cols-2 gap-2">
               <input
@@ -151,7 +151,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
                   address: {...profileData.address, city: e.target.value}
                 })}
                 placeholder="City"
-                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
               />
               <input
                 type="text"
@@ -161,7 +161,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
                   address: {...profileData.address, state: e.target.value}
                 })}
                 placeholder="State"
-                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#521135] focus:border-transparent"
               />
             </div>
           </div>
@@ -175,7 +175,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
             </button>
             <button
               onClick={handleProfileUpdate}
-              className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700"
+              className="flex-1 px-4 py-2 bg-[#521135] text-white rounded-lg font-medium hover:bg-[#00587c]"
             >
               Save Changes
             </button>
@@ -238,7 +238,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
             </div>
           </div>
           <div className="flex items-center">
-            <button className="relative inline-flex h-6 w-11 items-center rounded-full bg-blue-600 transition-colors">
+            <button className="relative inline-flex h-6 w-11 items-center rounded-full bg-[#521135] transition-colors">
               <span className="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-6" />
             </button>
           </div>
@@ -266,7 +266,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
     <div className="p-4 pb-24 md:pb-4 space-y-6">
       {/* Header */}
       <div className="flex items-center space-x-4">
-        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
+        <div className="w-16 h-16 bg-gradient-to-br from-[#521135] to-[#00587c] rounded-full flex items-center justify-center">
           <span className="text-white text-xl font-bold">
             {user.name.split(' ').map(n => n[0]).join('')}
           </span>
@@ -294,7 +294,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
               >
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Icon className="text-blue-600" size={20} />
+                    <Icon className="text-[#521135]" size={20} />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900">{section.title}</h3>
@@ -312,7 +312,7 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
       {activeSection && (
         <button
           onClick={() => setActiveSection(null)}
-          className="fixed bottom-20 md:bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 shadow-lg"
+          className="fixed bottom-20 md:bottom-4 right-4 bg-[#521135] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#00587c] shadow-lg"
         >
           Back to Settings
         </button>

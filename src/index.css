@@ -77,7 +77,7 @@
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, #003f80 0%, #0065B3 100%);
+  background: linear-gradient(135deg, #521135 0%, #00587c 100%);
 }
 
 .gradient-secondary {
@@ -85,7 +85,7 @@
 }
 
 .shadow-glow {
-  box-shadow: 0 0 20px rgba(0, 101, 179, 0.3);
+  box-shadow: 0 0 20px rgba(82, 17, 53, 0.3);
 }
 
 .transition-all-smooth {

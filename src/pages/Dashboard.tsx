@@ -97,7 +97,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
           className="glass-effect rounded-xl md:rounded-2xl p-4 md:p-6 hover:shadow-glow transition-all-smooth transform hover:scale-105 animate-scale-in"
         >
           <div className="flex flex-col md:flex-row items-center md:justify-center space-y-2 md:space-y-0 md:space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl md:rounded-2xl flex items-center justify-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-[#521135] to-[#521135] rounded-xl md:rounded-2xl flex items-center justify-center">
               <ArrowUpDown className="text-white" size={20} />
             </div>
             <div className="text-center md:text-left">
@@ -112,7 +112,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
           className="glass-effect rounded-xl md:rounded-2xl p-4 md:p-6 hover:shadow-glow transition-all-smooth transform hover:scale-105 animate-scale-in"
         >
           <div className="flex flex-col md:flex-row items-center md:justify-center space-y-2 md:space-y-0 md:space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl md:rounded-2xl flex items-center justify-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-[#521135] to-[#00587c] rounded-xl md:rounded-2xl flex items-center justify-center">
               <Plus className="text-white" size={20} />
             </div>
             <div className="text-center md:text-left">
@@ -127,7 +127,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
       <div>
         <div className="flex items-center justify-between mb-4 md:mb-6">
           <h2 className="text-xl md:text-2xl font-black text-gray-900">Your Accounts</h2>
-          <div className="text-xs md:text-sm text-blue-600 font-semibold">{accounts.length} accounts</div>
+          <div className="text-xs md:text-sm text-[#521135] font-semibold">{accounts.length} accounts</div>
         </div>
         
         <div className="grid gap-4 md:gap-6 md:grid-cols-2">
@@ -148,7 +148,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <h3 className="text-lg md:text-xl font-bold text-gray-900">Recent Activity</h3>
           <button 
             onClick={() => onTabChange('transactions')}
-            className="text-blue-600 hover:text-blue-700 text-xs md:text-sm font-bold transition-colors"
+            className="text-[#521135] hover:text-[#00587c] text-xs md:text-sm font-bold transition-colors"
           >
             View All →
           </button>

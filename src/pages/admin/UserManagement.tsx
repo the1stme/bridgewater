@@ -57,7 +57,7 @@ export const UserManagement: React.FC<UserManagementProps> = ({ onNavigate }) =>
         </div>
         <button
           onClick={() => setShowCreateModal(true)}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
+          className="bg-[#521135] hover:bg-[#00587c] text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
         >
           <Plus className="h-4 w-4" />
           <span>Create User</span>
@@ -73,7 +73,7 @@ export const UserManagement: React.FC<UserManagementProps> = ({ onNavigate }) =>
             placeholder="Search users by username, name, or email..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#521135] focus:border-transparent"
           />
         </div>
       </div>
@@ -108,7 +108,7 @@ export const UserManagement: React.FC<UserManagementProps> = ({ onNavigate }) =>
                     <div className="flex items-center">
                       <div className="flex-shrink-0 h-10 w-10">
                         <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                          <User className="h-5 w-5 text-blue-600" />
+                          <User className="h-5 w-5 text-[#521135]" />
                         </div>
                       </div>
                       <div className="ml-4">
@@ -143,7 +143,7 @@ export const UserManagement: React.FC<UserManagementProps> = ({ onNavigate }) =>
                     <div className="flex justify-end space-x-2">
                       <button
                         onClick={() => setEditingUser(user)}
-                        className="text-blue-600 hover:text-blue-900 p-1 rounded"
+                        className="text-[#521135] hover:text-blue-900 p-1 rounded"
                       >
                         <Edit className="h-4 w-4" />
                       </button>
@@ -289,7 +289,7 @@ const UserModal: React.FC<{
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 bg-blue-600 text-white p-2 rounded hover:bg-blue-700 disabled:opacity-50"
+              className="flex-1 bg-[#521135] text-white p-2 rounded hover:bg-[#00587c] disabled:opacity-50"
             >
               {loading ? 'Saving...' : 'Save'}
             </button>

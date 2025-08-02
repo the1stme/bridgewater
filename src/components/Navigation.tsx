@@ -56,7 +56,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 p-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl shadow-lg"
+        className="md:hidden fixed top-4 left-4 z-50 p-3 bg-gradient-to-r from-[#521135] to-[#521135] text-white rounded-xl shadow-lg"
       >
         {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -73,8 +73,8 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => handleTabChange(item.id)}
                 className={`flex flex-col items-center py-2 px-4 rounded-2xl transition-all-smooth transform ${
                   isActive
-                    ? 'text-white bg-gradient-to-r from-blue-500 to-blue-600 shadow-glow scale-105'
-                    : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105'
+                    ? 'text-white bg-gradient-to-r from-[#521135] to-[#521135] shadow-glow scale-105'
+                    : 'text-gray-600 hover:text-[#521135] hover:bg-blue-50 hover:scale-105'
                 }`}
               >
                 <Icon size={22} />
@@ -100,11 +100,11 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="p-6 bg-white border-b border-gray-200">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              {/* Bank of America Logo */}
+              {/* Bridgewater Logo */}
               <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
                 <img
-                  src="/bank-of-america-logo.svg"
-                  alt="Bank of America Online Banking"
+                  src="/bwb_logo_large.svg"
+                  alt="Bridgewater Online Banking"
                   className="h-8 w-auto object-contain"
                 />
               </div>
@@ -128,8 +128,8 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => handleTabChange(item.id)}
                 className={`w-full flex items-center space-x-4 py-4 px-6 rounded-2xl mb-3 transition-all-smooth transform hover:scale-105 ${
                   isActive
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
-                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-700 border border-transparent hover:border-blue-200'
+                    ? 'bg-gradient-to-r from-[#521135] to-[#00587c] text-white shadow-lg'
+                    : 'text-gray-700 hover:bg-blue-50 hover:text-[#00587c] border border-transparent hover:border-blue-200'
                 }`}
               >
                 <Icon size={24} />

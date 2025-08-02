@@ -50,7 +50,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
         <div className="flex space-x-3">
           <button
             onClick={() => onNavigate('users')}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
+            className="bg-[#521135] hover:bg-[#00587c] text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
           >
             <Plus className="h-4 w-4" />
             <span>Add User</span>
@@ -72,7 +72,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
           title="Total Users"
           value={dashboardStats.totalUsers}
           subtitle="Registered users"
-          color="text-blue-600"
+          color="text-[#521135]"
         />
         <StatCard
           icon={CreditCard}
@@ -86,7 +86,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
           title="Total Balance"
           value={`$${dashboardStats.totalBalance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
           subtitle="Across all accounts"
-          color="text-blue-600"
+          color="text-[#521135]"
         />
         <StatCard
           icon={Activity}
@@ -103,7 +103,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button
             onClick={() => onNavigate('users')}
-            className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors text-center"
+            className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#521135] hover:bg-blue-50 transition-colors text-center"
           >
             <Users className="h-8 w-8 text-gray-400 mx-auto mb-2" />
             <p className="text-sm font-medium text-gray-700">Manage Users</p>
@@ -121,7 +121,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
           
           <button
             onClick={() => onNavigate('transactions')}
-            className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors text-center"
+            className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#521135] hover:bg-blue-50 transition-colors text-center"
           >
             <Activity className="h-8 w-8 text-gray-400 mx-auto mb-2" />
             <p className="text-sm font-medium text-gray-700">View Transactions</p>

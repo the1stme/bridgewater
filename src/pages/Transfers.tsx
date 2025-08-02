@@ -51,7 +51,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
       case 'pending':
         return <Clock className="text-yellow-500" size={20} />;
       case 'scheduled':
-        return <Calendar className="text-blue-500" size={20} />;
+        return <Calendar className="text-[#521135]" size={20} />;
       default:
         return <Clock className="text-gray-500" size={20} />;
     }
@@ -153,7 +153,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
 
           <button
             onClick={() => setCurrentView('form')}
-            className="w-full bg-white text-blue-700 font-bold py-4 rounded-2xl hover:bg-gray-50 transition-all-smooth transform hover:scale-105 flex items-center justify-center space-x-3"
+            className="w-full bg-white text-[#00587c] font-bold py-4 rounded-2xl hover:bg-gray-50 transition-all-smooth transform hover:scale-105 flex items-center justify-center space-x-3"
           >
             <Plus size={24} />
             <span className="text-lg">New Transfer</span>
@@ -170,7 +170,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
             className="glass-effect rounded-2xl p-6 hover:shadow-glow transition-all-smooth transform hover:scale-105 animate-scale-in"
           >
             <div className="text-center space-y-3">
-              <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="w-14 h-14 bg-gradient-to-r from-[#521135] to-[#521135] rounded-2xl flex items-center justify-center mx-auto">
                 <Wallet className="text-white" size={24} />
               </div>
               <div>
@@ -216,7 +216,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                 <p className="text-gray-600 mb-6">Start by making your first transfer!</p>
                 <button
                   onClick={() => setCurrentView('form')}
-                  className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-2xl font-semibold hover:shadow-glow transition-all-smooth transform hover:scale-105"
+                  className="bg-gradient-to-r from-[#521135] to-[#521135] text-white px-6 py-3 rounded-2xl font-semibold hover:shadow-glow transition-all-smooth transform hover:scale-105"
                 >
                   Make Transfer
                 </button>
@@ -230,7 +230,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                   <div key={transfer.id} className="p-6 hover:bg-gray-50 transition-colors">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-to-r from-[#521135] to-[#521135] rounded-2xl flex items-center justify-center">
                           {getStatusIcon(transfer.status)}
                         </div>
                         <div>
@@ -250,7 +250,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                         <div className={`text-xs px-3 py-1 rounded-full font-bold ${
                           transfer.status === 'completed' ? 'bg-green-100 text-green-700' :
                           transfer.status === 'pending' ? 'bg-yellow-100 text-yellow-700' :
-                          'bg-blue-100 text-blue-700'
+                          'bg-blue-100 text-[#00587c]'
                         }`}>
                           {transfer.status.toUpperCase()}
                         </div>
@@ -286,7 +286,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
 
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-1/3 transition-all-smooth"></div>
+          <div className="bg-gradient-to-r from-[#521135] to-[#521135] h-2 rounded-full w-1/3 transition-all-smooth"></div>
         </div>
 
         <div className="space-y-8">
@@ -299,18 +299,18 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                 onClick={() => setTransferType('internal')}
                 className={`p-6 rounded-2xl border-2 transition-all-smooth transform hover:scale-105 ${
                   transferType === 'internal'
-                    ? 'border-blue-500 bg-blue-50 shadow-glow'
+                    ? 'border-[#521135] bg-blue-50 shadow-glow'
                     : 'border-gray-200 hover:border-gray-300'
                 }`}
               >
                 <div className="text-center space-y-3">
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto ${
-                    transferType === 'internal' ? 'bg-blue-500' : 'bg-gray-100'
+                    transferType === 'internal' ? 'bg-[#521135]' : 'bg-gray-100'
                   }`}>
                     <Wallet className={transferType === 'internal' ? 'text-white' : 'text-gray-600'} size={24} />
                   </div>
                   <div>
-                    <div className={`font-bold ${transferType === 'internal' ? 'text-blue-700' : 'text-gray-900'}`}>
+                    <div className={`font-bold ${transferType === 'internal' ? 'text-[#00587c]' : 'text-gray-900'}`}>
                       Between My Accounts
                     </div>
                     <div className="text-sm text-gray-600 font-medium">Instant transfer</div>
@@ -323,18 +323,18 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                 onClick={() => setTransferType('external')}
                 className={`p-6 rounded-2xl border-2 transition-all-smooth transform hover:scale-105 ${
                   transferType === 'external'
-                    ? 'border-blue-500 bg-blue-50 shadow-glow'
+                    ? 'border-[#521135] bg-blue-50 shadow-glow'
                     : 'border-gray-200 hover:border-gray-300'
                 }`}
               >
                 <div className="text-center space-y-3">
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto ${
-                    transferType === 'external' ? 'bg-blue-500' : 'bg-gray-100'
+                    transferType === 'external' ? 'bg-[#521135]' : 'bg-gray-100'
                   }`}>
                     <Building2 className={transferType === 'external' ? 'text-white' : 'text-gray-600'} size={24} />
                   </div>
                   <div>
-                    <div className={`font-bold ${transferType === 'external' ? 'text-blue-700' : 'text-gray-900'}`}>
+                    <div className={`font-bold ${transferType === 'external' ? 'text-[#00587c]' : 'text-gray-900'}`}>
                       External Transfer
                     </div>
                     <div className="text-sm text-gray-600 font-medium">1-3 business days</div>
@@ -354,7 +354,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
               <select
                 value={fromAccount}
                 onChange={(e) => setFromAccount(e.target.value)}
-                className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                 required
               >
                 <option value="">Select account...</option>
@@ -373,7 +373,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                 <select
                   value={toAccount}
                   onChange={(e) => setToAccount(e.target.value)}
-                  className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                  className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                   required
                 >
                   <option value="">Select account...</option>
@@ -391,8 +391,8 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                     type="text"
                     value={externalBankName}
                     onChange={(e) => setExternalBankName(e.target.value)}
-                    placeholder="Bank Name (e.g., Chase Bank, Bank of America)"
-                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                    placeholder="Bank Name (e.g., Chase Bank, Bridgewater)"
+                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                     required
                   />
 
@@ -401,7 +401,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                     value={externalAccountHolderName}
                     onChange={(e) => setExternalAccountHolderName(e.target.value)}
                     placeholder="Account Holder Name"
-                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                     required
                   />
 
@@ -413,7 +413,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                       placeholder="Routing Number (9 digits)"
                       maxLength={9}
                       pattern="[0-9]{9}"
-                      className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                      className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                       required
                     />
 
@@ -422,7 +422,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                       value={externalAccountNumber}
                       onChange={(e) => setExternalAccountNumber(e.target.value)}
                       placeholder="Account Number"
-                      className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                      className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                       required
                     />
                   </div>
@@ -430,7 +430,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                   <select
                     value={externalAccountType}
                     onChange={(e) => setExternalAccountType(e.target.value)}
-                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                    className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
                   >
                     <option value="checking">Checking Account</option>
                     <option value="savings">Savings Account</option>
@@ -454,13 +454,13 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
                   placeholder="0.00"
-                  className="w-full border-2 border-gray-200 rounded-2xl pl-12 pr-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-bold text-xl"
+                  className="w-full border-2 border-gray-200 rounded-2xl pl-12 pr-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-bold text-xl"
                   required
                 />
               </div>
               {fromAccount && amount && (
                 <div className="mt-3 p-4 bg-blue-50 rounded-2xl">
-                  <div className="text-sm font-medium text-blue-700">
+                  <div className="text-sm font-medium text-[#00587c]">
                     Remaining balance: {formatCurrency(getAccountBalance(fromAccount) - parseFloat(amount || '0'))}
                   </div>
                 </div>
@@ -474,7 +474,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="What's this transfer for?"
-                className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all-smooth font-medium"
+                className="w-full border-2 border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#521135] focus:border-[#521135] transition-all-smooth font-medium"
               />
             </div>
           </div>
@@ -485,7 +485,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
           <button
             onClick={handleNext}
             disabled={!isFormValid}
-            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-4 rounded-2xl hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed transition-all-smooth transform hover:scale-105 text-lg"
+            className="w-full bg-gradient-to-r from-[#521135] to-[#521135] text-white font-bold py-4 rounded-2xl hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed transition-all-smooth transform hover:scale-105 text-lg"
           >
             Continue to Review
           </button>
@@ -514,7 +514,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
 
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-2/3 transition-all-smooth"></div>
+          <div className="bg-gradient-to-r from-[#521135] to-[#521135] h-2 rounded-full w-2/3 transition-all-smooth"></div>
         </div>
 
         {/* Transfer Summary */}
@@ -535,7 +535,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
             </div>
             
             <div className="flex justify-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#521135] to-[#521135] rounded-full flex items-center justify-center">
                 <ArrowRight className="text-white" size={20} />
               </div>
             </div>
@@ -579,7 +579,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
         {/* Important Notice */}
         <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-2xl p-6">
           <div className="flex items-start space-x-3">
-            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <div className="w-6 h-6 bg-[#521135] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <span className="text-white text-xs font-bold">!</span>
             </div>
             <div>
@@ -596,7 +596,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
         <div className="mt-8">
           <button
             onClick={handleNext}
-            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-4 rounded-2xl hover:shadow-glow transition-all-smooth transform hover:scale-105 text-lg"
+            className="w-full bg-gradient-to-r from-[#521135] to-[#521135] text-white font-bold py-4 rounded-2xl hover:shadow-glow transition-all-smooth transform hover:scale-105 text-lg"
           >
             Confirm Transfer
           </button>
@@ -611,7 +611,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
       <div className="p-6 space-y-8 animate-fade-in">
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-full transition-all-smooth"></div>
+          <div className="bg-gradient-to-r from-[#521135] to-[#521135] h-2 rounded-full w-full transition-all-smooth"></div>
         </div>
 
         <div className="text-center space-y-8">
@@ -637,8 +637,8 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
 
             <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6">
               <div className="text-center">
-                <div className="text-sm text-blue-600 font-bold mb-2">Confirmation Code</div>
-                <div className="text-2xl font-black text-blue-700 font-mono tracking-wider">
+                <div className="text-sm text-[#521135] font-bold mb-2">Confirmation Code</div>
+                <div className="text-2xl font-black text-[#00587c] font-mono tracking-wider">
                   {confirmationCode}
                 </div>
               </div>
@@ -677,7 +677,7 @@ export const Transfers: React.FC<TransfersProps> = ({ transfers, accounts, onTra
           <div className="space-y-4">
             <button
               onClick={() => setCurrentView('form')}
-              className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-4 rounded-2xl hover:shadow-glow transition-all-smooth transform hover:scale-105 text-lg"
+              className="w-full bg-gradient-to-r from-[#521135] to-[#521135] text-white font-bold py-4 rounded-2xl hover:shadow-glow transition-all-smooth transform hover:scale-105 text-lg"
             >
               Make Another Transfer
             </button>

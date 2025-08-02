@@ -52,13 +52,13 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({ onLogout }) => {
               <div className="flex items-center space-x-4">
                 <div className="bg-white rounded-lg p-2 border border-gray-200 shadow-sm">
                   <img
-                    src="/bank-of-america-logo.svg"
-                    alt="Bank of America"
+                    src="/bwb_logo_large.svg"
+                    alt="Bridgewater"
                     className="h-6 w-auto object-contain"
                   />
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Shield className="h-8 w-8 text-blue-600" />
+                  <Shield className="h-8 w-8 text-[#521135]" />
                   <h1 className="text-xl font-bold text-gray-900">Admin Portal</h1>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({ onLogout }) => {
                     onClick={() => navigate(item.path)}
                     className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
                       isActive(item.path)
-                        ? 'bg-blue-100 text-blue-700 border border-blue-200'
+                        ? 'bg-blue-100 text-[#00587c] border border-blue-200'
                         : 'text-gray-700 hover:bg-gray-100'
                     }`}
                   >

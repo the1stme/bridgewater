@@ -27,7 +27,7 @@ export const AccountCard: React.FC<AccountCardProps> = ({ account, onClick }) =>
 
   const getAccountGradient = (type: string) => {
     switch (type) {
-      case 'checking': return 'from-blue-500 to-blue-600';
+      case 'checking': return 'from-[#521135] to-[#521135]';
       case 'savings': return 'from-green-500 to-green-600';
       case 'credit': return 'from-indigo-500 to-indigo-600';
       case 'investment': return 'from-orange-500 to-orange-600';

@@ -50,20 +50,20 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-boa-blue-900 via-boa-blue-800 to-boa-blue-700 flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-boa-blue-900 via-boa-blue-800 to-boa-[#00587c] flex items-center justify-center p-6 relative overflow-hidden">
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-400/40 to-boa-blue-800/40 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-300/40 to-boa-blue-500/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-300/40 to-boa-[#521135]/40 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-boa-blue-800/30 to-boa-blue-400/30 rounded-full blur-2xl animate-bounce-subtle"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-boa-blue-500/30 to-boa-blue-800/30 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-boa-[#521135]/30 to-boa-blue-800/30 rounded-full blur-xl animate-pulse"></div>
       </div>
 
       <div className="relative w-full max-w-md animate-fade-in">
-        {/* Bank of America Logo */}
+        {/* Bridgewater Logo */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center mb-8 bg-white rounded-2xl p-6 shadow-2xl">
-            <img src="/bank-of-america-logo.svg" alt="Bank of America Online Banking" className="h-16 w-auto" />
+            <img src="/bwb_logo_large.svg" alt="Bridgewater Online Banking" className="h-16 w-auto" />
           </div>
         </div>
 
@@ -112,7 +112,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-200 hover:text-white transition-colors p-1 rounded-lg hover:bg-blue-700/50"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-200 hover:text-white transition-colors p-1 rounded-lg hover:bg-[#00587c]/50"
                 >
                   {showPassword ? <EyeOff size={22} /> : <Eye size={22} />}
                 </button>
@@ -125,7 +125,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                 type="button"
                 onClick={() => setSaveUsername(!saveUsername)}
                 className={`w-6 h-6 rounded-full border-2 border-blue-300/60 flex items-center justify-center transition-all-smooth ${
-                  saveUsername ? 'bg-gradient-to-r from-blue-400 to-blue-500 border-blue-400' : 'hover:border-blue-200'
+                  saveUsername ? 'bg-gradient-to-r from-blue-400 to-[#521135] border-blue-400' : 'hover:border-blue-200'
                 }`}
               >
                 {saveUsername && <div className="w-3 h-3 bg-white rounded-full"></div>}
@@ -137,7 +137,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-all-smooth disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 text-lg shadow-xl"
+              className="w-full bg-gradient-to-r from-[#521135] to-[#00587c] hover:from-[#00587c] hover:to-blue-800 text-white font-bold py-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-all-smooth disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 text-lg shadow-xl"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center space-x-2">
@@ -152,10 +152,10 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
           {/* Footer Links */}
           <div className="flex justify-between items-center mt-8 pt-6 border-t border-blue-400/30">
-            <button className="text-blue-200 hover:text-white text-sm font-medium transition-colors hover:bg-blue-700/50 px-3 py-2 rounded-xl">
+            <button className="text-blue-200 hover:text-white text-sm font-medium transition-colors hover:bg-[#00587c]/50 px-3 py-2 rounded-xl">
               Forgot Password?
             </button>
-            <button className="text-blue-200 hover:text-white text-sm font-bold transition-colors hover:bg-blue-700/50 px-3 py-2 rounded-xl">
+            <button className="text-blue-200 hover:text-white text-sm font-bold transition-colors hover:bg-[#00587c]/50 px-3 py-2 rounded-xl">
               ENROLL
             </button>
           </div>

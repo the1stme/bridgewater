@@ -55,7 +55,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
           <CreditCard className="mx-auto text-gray-400 mb-4" size={48} />
           <h2 className="text-xl font-semibold text-gray-900 mb-2">No Cards Found</h2>
           <p className="text-gray-500 mb-6">You don't have any active cards yet.</p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+          <button className="bg-[#521135] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#00587c]">
             Request New Card
           </button>
         </div>
@@ -68,7 +68,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
       {/* Header */}
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-gray-900">Card Services</h1>
-        <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+        <button className="text-[#521135] hover:text-[#00587c] text-sm font-medium">
           + New Card
         </button>
       </div>
@@ -81,7 +81,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
           <div key={card.id} className="space-y-4">
             {/* Card Display */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 rounded-2xl p-6 text-white shadow-xl">
+              <div className="bg-gradient-to-br from-[#521135] via-[#521135] to-blue-800 rounded-2xl p-6 text-white shadow-xl">
                 {/* Card Header */}
                 <div className="flex justify-between items-start mb-8">
                   <div>
@@ -130,14 +130,14 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
 
               {/* Card Indicators */}
               <div className="flex justify-center mt-4 space-x-2">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <div className="w-2 h-2 bg-[#521135] rounded-full"></div>
                 <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
                 <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
               </div>
             </div>
 
             {/* Card Controls */}
-            <div className="bg-blue-600 rounded-xl p-4 text-white">
+            <div className="bg-[#521135] rounded-xl p-4 text-white">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm opacity-80">LOCKED</span>
                 <div className="flex items-center">
@@ -190,7 +190,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
               <div className="grid grid-cols-1 gap-4">
                 <button className="flex flex-col items-center p-4 bg-white rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
-                    <Plane className="text-blue-600" size={20} />
+                    <Plane className="text-[#521135]" size={20} />
                   </div>
                   <span className="text-xs font-medium text-center text-gray-700">TRAVEL PLANS</span>
                 </button>
@@ -206,7 +206,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
               <div className="grid grid-cols-1 gap-4">
                 <button className="flex flex-col items-center p-4 bg-white rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
-                    <RefreshCw className="text-blue-600" size={20} />
+                    <RefreshCw className="text-[#521135]" size={20} />
                   </div>
                   <span className="text-xs font-medium text-center text-gray-700">REPLACE CARD</span>
                 </button>
@@ -242,7 +242,7 @@ export const Cards: React.FC<CardsProps> = ({ cards, accounts, onCardToggle }) =
                 <h3 className="font-semibold text-gray-900">Card Details</h3>
                 <button
                   onClick={() => toggleCardVisibility(card.id)}
-                  className="flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+                  className="flex items-center space-x-2 text-[#521135] hover:text-[#00587c]"
                 >
                   {isVisible ? <EyeOff size={16} /> : <Eye size={16} />}
                   <span className="text-sm">{isVisible ? 'Hide' : 'Show'} Number</span>

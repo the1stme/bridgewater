@@ -96,7 +96,7 @@ export const AccountManagement: React.FC<AccountManagementProps> = ({ onNavigate
         </div>
         <button
           onClick={() => setShowCreateModal(true)}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
+          className="bg-[#521135] hover:bg-[#00587c] text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
         >
           <Plus className="h-4 w-4" />
           <span>Create Account</span>
@@ -112,7 +112,7 @@ export const AccountManagement: React.FC<AccountManagementProps> = ({ onNavigate
             placeholder="Search accounts by name, number, or user..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#521135] focus:border-transparent"
           />
         </div>
       </div>
@@ -124,7 +124,7 @@ export const AccountManagement: React.FC<AccountManagementProps> = ({ onNavigate
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center space-x-3">
                 <div className="p-2 bg-blue-100 rounded-lg">
-                  <CreditCard className="h-6 w-6 text-blue-600" />
+                  <CreditCard className="h-6 w-6 text-[#521135]" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">{account.name}</h3>
@@ -311,7 +311,7 @@ const CreateAccountModal: React.FC<{
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 bg-blue-600 text-white p-2 rounded hover:bg-blue-700 disabled:opacity-50"
+              className="flex-1 bg-[#521135] text-white p-2 rounded hover:bg-[#00587c] disabled:opacity-50"
             >
               {loading ? 'Creating...' : 'Create'}
             </button>
